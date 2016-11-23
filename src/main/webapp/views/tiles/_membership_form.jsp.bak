@@ -1,0 +1,37 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+
+<div class="container">
+	<div class="col-xs-3">
+  		<img src="http://mumstudents.org/~985239/resource/images/applicantinfo.png" alt="Applicant Info" class="img-thumbnail"/>
+  	</div>
+  	<div class="col-xs-3">
+		<img src="http://mumstudents.org/~985239/resource/images/agreement.png" alt="Agreement"/>  
+  	</div>
+  	<div class="col-xs-3">
+		<img src="http://mumstudents.org/~985239/resource/images/documentupload.png" alt="Requirements"/>  
+  	</div>
+  	<div class="col-xs-3">
+		<img src="http://mumstudents.org/~985239/resource/images/payment.png" alt="Payment"/>  
+  	</div>
+
+</div>
+
+<h1>Membership Form</h1>
+<form:form modelAttribute="newApplicant" method="post">
+	<table>
+		<tr>
+			<td>Last Name</td>
+			<td><form:input path="lastName"/></td>
+		</tr>
+		<tr>
+			<td>First Name</td>
+			<td><form:input path="firstName"/></td>
+		</tr>
+		<tr>
+			<td>Middle Name</td>
+			<td><form:input path="middleName"/></td>
+		</tr>
+	</table>
+	<input type="submit" value="Submit"/>
+</form:form>

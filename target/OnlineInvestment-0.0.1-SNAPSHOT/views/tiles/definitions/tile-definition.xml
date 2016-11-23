@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/views/tiles/templates/baselayout.jsp">	
+		<put-attribute name="title" value="SIDC-Coop.org - Online Investment" />
+		<put-attribute name="css" value="/views/tiles/templates/js.jsp"/>
+		<put-attribute name="js" value="/views/tiles/templates/css.jsp"/>				
+		<put-attribute name="heading" value="" />
+		<put-attribute name="tagline" value="" />
+ 		<put-attribute name="navigation" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+ 	<definition name="loginForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_login.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>
+	
+ 	<definition name="home" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_home.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>
+		
+	<definition name="membershipForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_membership_form.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>
+	
+	<definition name="agreementForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_agreement_form.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>	
+
+	<definition name="documentForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_document_form.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>	
+
+	<definition name="paymentForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_payment_form.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>		
+
+	<definition name="memberProfile" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_member_profile.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>	
+	<definition name="memberCapital" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_member_capital.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>	
+	
+	<definition name="newUserForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_user_form_new.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>		
+	
+	<definition name="addUserForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_user_form_add.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>		
+
+	<definition name="editUserForm" extends="baseLayout">
+		<put-attribute name="navigation" value="/views/tiles/templates/top.jsp" />
+ 		<put-attribute name="body" value="/views/tiles/_user_form_edit.jsp" />
+ 		<put-attribute name="footer" value="/views/tiles/templates/bottom.jsp" />
+	</definition>		
+	
+</tiles-definitions>

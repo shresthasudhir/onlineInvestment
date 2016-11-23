@@ -1,0 +1,15 @@
+org\coop\sidc\serviceimpl\MemberServiceImpl.class
+org\coop\sidc\controllers\ExceptionHandlerController.class
+org\coop\sidc\repositories\MemberRepository.class
+org\coop\sidc\controllers\MainController.class
+org\coop\sidc\domain\Credential.class
+org\coop\sidc\repositories\CredentialRepository.class
+org\coop\sidc\service\CredentialService.class
+org\coop\sidc\controllers\MemberController.class
+org\coop\sidc\controllers\LoginController.class
+org\coop\sidc\domain\Member.class
+org\coop\sidc\controllers\CredentialController.class
+org\coop\sidc\controllers\MembershipController.class
+org\coop\sidc\domain\Authority.class
+org\coop\sidc\serviceimpl\CredentialServiceImpl.class
+org\coop\sidc\service\MemberService.class
